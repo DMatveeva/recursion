@@ -1,5 +1,6 @@
 import unittest
 
+from EvenIndices import print_elements_with_even_indices
 from EvenNumbers import print_even_numbers
 from ListsLength import length_of_list
 from Palindrome import is_palindrome
@@ -22,8 +23,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(result, True)  # add assertion here
 
     def test_print_even_numbers(self):
-        l = [1, 2 , 3, 4, 5, 6, 7]
+        l = [0, 1, 2, 3, 4, 5, 6, 7]
         result = print_even_numbers(l)
+
+    def test_print_elements_with_even_indices(self):
+        l = [0, 1, 2, 3, 4, 5, 6, 7]
+        result = print_elements_with_even_indices(l)
 
 
 if __name__ == '__main__':
