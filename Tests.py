@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(result, 0)  # add assertion here
 
     def test_is_palindrome(self):
-        string = 'a'
+        string = 'ad da'
         result = is_palindrome(string)
         self.assertEqual(result, True)  # add assertion here
 
