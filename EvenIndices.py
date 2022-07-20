@@ -1,4 +1,6 @@
-def print_elements_with_even_indices(values, index=0):
+def print_elements_with_even_indices(values, index=None):
+    if index is None:
+        index = 0
     if not values:
         return
     if index % 2 == 0:
