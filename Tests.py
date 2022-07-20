@@ -36,6 +36,11 @@ class MyTestCase(unittest.TestCase):
         result = find_second_max_num(values)
         self.assertEqual(result, -9)  # add assertion here
 
+    def test_find_second_max_num(self):
+        values = [1, 1, 1, -9, 10]
+        result = find_second_max_num(values)
+        self.assertEqual(result, 1)  # add assertion here
+
 
 if __name__ == '__main__':
     unittest.main()
